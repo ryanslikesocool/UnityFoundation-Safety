@@ -1,5 +1,9 @@
-# Some Package
-Some package description
+# Unity Foundation - Safety
+Safety functions for Unity + C#.
+
+## NOTICE
+**This package is under development and not considered production-ready.**\
+Breaking changes are common, documentation is incomplete, and support is limited.  Use at your own risk.
 
 ## Installation (Unity Package Manager)
 - Select "Add package from git URL..." from the plus menu in the package manager window.
