@@ -14,6 +14,14 @@ namespace Foundation {
 			=> Assert(condition, () => "Assertion failed");
 
 		/// <summary>
+		/// Performs a traditional C-style assert.
+		/// </summary>
+		/// <param name="condition">The condition to test.</param>
+		[MethodImpl(AggressiveInlining)]
+		public static void Assert(bool condition)
+			=> Assert(() => condition);
+
+		/// <summary>
 		/// Performs a traditional C-style assert with a message.
 		/// </summary>
 		/// <param name="condition">The condition to test.</param>
@@ -24,5 +32,14 @@ namespace Foundation {
 				Debug.unityLogger.Log(LogType.Assert, message());
 			}
 		}
+
+		/// <summary>
+		/// Performs a traditional C-style assert with a message.
+		/// </summary>
+		/// <param name="condition">The condition to test.</param>
+		/// <param name="message">A string to log to the console if <paramref name="condition"/> is evaluated to <see langword="false"/>.</param>
+		[MethodImpl(AggressiveInlining)]
+		public static void Assert(bool condition, Func<string> message)
+			=> Assert(() => condition, message);
 	}
 }
