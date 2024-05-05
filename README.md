@@ -9,5 +9,5 @@ Breaking changes are common, documentation is incomplete, and support is limited
 - Select "Add package from git URL..." from the plus menu in the package manager window.
 - Paste the package's git url.
 ```
-https://github.com/USERNAME/REPOSITORY.git
+https://github.com/ryanslikesocool/UnityFoundation-Safety
 ```
